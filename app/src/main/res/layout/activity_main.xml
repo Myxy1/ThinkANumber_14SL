@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imageHp1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/heart2" />
+
+        <ImageView
+            android:id="@+id/imageHp2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/heart2" />
+
+        <ImageView
+            android:id="@+id/imageHp3"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/heart2" />
+
+        <ImageView
+            android:id="@+id/imageHp4"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/heart2" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linearLayout"
+        android:text="Gondoltam egy számra!"
+        android:textAlignment="center"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/buttonPlusz"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_below="@id/textView"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/buttonbackround"
+        android:text="+"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textViewSzam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonPlusz"
+        android:layout_centerHorizontal="true"
+        android:text="1"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/buttonMinusz"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_below="@id/textViewSzam"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/buttonbackround"
+        android:text="-"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/buttonTippeles"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="Tippel" />
+
+
+</RelativeLayout>
